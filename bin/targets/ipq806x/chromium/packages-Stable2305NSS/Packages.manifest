@@ -1,0 +1,2310 @@
+Package: base-files
+Version: 1552-r23711+22-cdc907abed
+Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
+Source: package/base-files
+SourceName: base-files
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1701897205
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 51654
+Filename: base-files_1552-r23711+22-cdc907abed_arm_cortex-a15_neon-vfpv4.ipk
+Size: 52662
+SHA256sum: b4b2dd30b4f26809c48e81c9e9ba3a16eb5592c8b75dfd4d70a2b2ee487ce09c
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: block-mount
+Version: 2023-02-28-bfe882d5-1
+Depends: libc, ubox, libubox20230523, libuci20130104, libblobmsg-json20230523, libjson-c5
+Source: package/system/fstools
+SourceName: block-mount
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1679419702
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 27273
+Filename: block-mount_2023-02-28-bfe882d5-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 27974
+SHA256sum: 1d53097f0c55afc04f389c3bfcc1d05a74194d0a6e6a66573386c3f90e6abd8f
+Description:  Block device mounting and checking
+
+Package: dropbear
+Version: 2022.82-5
+Depends: libc
+Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+Source: package/network/services/dropbear
+SourceName: dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+SourceDateEpoch: 1704296233
+CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 110197
+Filename: dropbear_2022.82-5_arm_cortex-a15_neon-vfpv4.ipk
+Size: 111075
+SHA256sum: ea0a831a0fece83294be6bd2b09f4ff6987a8c18537a81f4a46da9892d1486ff
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: fstools
+Version: 2023-02-28-bfe882d5-1
+Depends: libc, ubox
+Source: package/system/fstools
+SourceName: fstools
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1679419702
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 16855
+Filename: fstools_2023-02-28-bfe882d5-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 17612
+SHA256sum: 30c459ad2f4b3ce98223e073a87c1e2a0e5d5ee2667342a2895aba7560356207
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2019-11-12-8f7fe925-1
+Depends: libc
+Source: package/system/fwtool
+SourceName: fwtool
+License: GPL-2.0
+Section: utils
+SourceDateEpoch: 1573768411
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3792
+Filename: fwtool_2019-11-12-8f7fe925-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4550
+SHA256sum: 53b78654732fd51a95f3602c117de08d7e481138a5df0af24e081f1281353808
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: iptables-mod-ipopt
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-ipopt
+Source: package/network/utils/iptables
+SourceName: iptables-mod-ipopt
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1699794865
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 11950
+Filename: iptables-mod-ipopt_1.8.8-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 12763
+SHA256sum: 2e3e091d32db99ecee1b554b5bd2e25e328810f9e510e6cdc3fb202a239b8cb1
+Description:  iptables extensions for matching/changing IP packet options.
+ 
+ Matches:
+ - dscp
+ - ecn
+ - length
+ - statistic
+ - tcpmss
+ - unclean
+ - hl
+ 
+ Targets:
+ - DSCP
+ - CLASSIFY
+ - ECN
+ - HL
+ 
+
+Package: iptables-nft
+Version: 1.8.8-2
+Depends: libc, kmod-ipt-core, xtables-nft
+Provides: iptables
+Alternatives: 300:/usr/sbin/iptables:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/iptables-restore:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/iptables-save:/usr/sbin/xtables-nft-multi
+Source: package/network/utils/iptables
+SourceName: iptables-nft
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1699794865
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 243
+Filename: iptables-nft_1.8.8-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 1072
+SHA256sum: b681e42aa6a73c5bb1d4fae34789d3df1e4e2517b0eb45f278d8d3ed5e7b9e8f
+Description:  Extra iptables nftables nft binaries.
+ iptables-nft
+ iptables-nft-restore
+ iptables-nft-save
+ iptables-translate
+ iptables-restore-translate
+
+Package: kmod-asn1-decoder
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-asn1-decoder
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2528
+Filename: kmod-asn1-decoder_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3287
+SHA256sum: fd16b013d018c8e93643fec9a6ee10f1695b4b941efe319891da3c6532f22f9d
+Description:  Simple ASN1 decoder
+
+Package: kmod-asn1-encoder
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-asn1-encoder
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2488
+Filename: kmod-asn1-encoder_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3249
+SHA256sum: 87bfe9df2b786a2059399ae045da608bbf6928a713ad7647f364e378d8d319b9
+Description:  Simple ASN1 encoder
+
+Package: kmod-ata-ahci-platform
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-ata-core
+Source: package/kernel/linux
+SourceName: kmod-ata-ahci-platform
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 6296
+Filename: kmod-ata-ahci-platform_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 7100
+SHA256sum: 3976a7cd0522439c73559160b6d9543aa1d7827f8c51a5b12bd78b048c13a9d3
+Description:  Platform support for AHCI Serial ATA controllers
+
+Package: kmod-ata-ahci
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-ata-core
+Source: package/kernel/linux
+SourceName: kmod-ata-ahci
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 6955
+Filename: kmod-ata-ahci_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 7751
+SHA256sum: f402a8b4296eb9410a0c44861db72d2b9515d8d0ca5f1e248c63c8917ad97f6a
+Description:  Support for AHCI Serial ATA controllers
+
+Package: kmod-ata-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-scsi-core
+Source: package/kernel/linux
+SourceName: kmod-ata-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 98289
+Filename: kmod-ata-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 98255
+SHA256sum: 4b969b24c86680a4db8e61051bd73af3959e85cee9b43fb57f6474ae2742d3f0
+Description:  Serial and Parallel ATA support
+
+Package: kmod-ath10k-ct
+Version: 5.15.146+2022-05-13-f808496f-5
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-mac80211, kmod-ath, kmod-hwmon-core
+Provides: kmod-ath10k
+Source: package/kernel/ath10k-ct
+SourceName: kmod-ath10k-ct
+License: GPLv2
+Section: kernel
+SourceDateEpoch: 1690370984
+Maintainer: Ben Greear <greearb@candelatech.com>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 244562
+Filename: kmod-ath10k-ct_5.15.146+2022-05-13-f808496f-5_arm_cortex-a15_neon-vfpv4.ipk
+Size: 242381
+SHA256sum: bfc274bb6a5565f3c7ac9de08f0f51af1b7b17d99ecf4d08f3186b5287143234
+Description:  ath10k-ct driver optimized for CT ath10k firmware
+
+Package: kmod-ath
+Version: 5.15.146+6.1.24-3
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-mac80211
+Source: package/kernel/mac80211
+SourceName: kmod-ath
+Section: kernel
+SourceDateEpoch: 1705330034
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 12158
+Filename: kmod-ath_5.15.146+6.1.24-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 12737
+SHA256sum: cce928af1f71b095e927e23e360276dc92a42a80a7210fd78c35690d712520e1
+Description:  This module contains some common parts needed by Atheros Wireless drivers.
+
+Package: kmod-cdrom
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-cdrom
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 16015
+Filename: kmod-cdrom_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 16681
+SHA256sum: 48800acc93ba65e8335ebb82dc385c51619e2d4d66c1525ee563a527b29fb908
+Description:  Kernel library module for CD / DVD drives
+
+Package: kmod-cfg80211
+Version: 5.15.146+6.1.24-3
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), iw, iwinfo, wireless-regdb
+Source: package/kernel/mac80211
+SourceName: kmod-cfg80211
+Section: kernel
+SourceDateEpoch: 1705330034
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 163259
+Filename: kmod-cfg80211_5.15.146+6.1.24-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 163320
+SHA256sum: e36a6e4ec9507f59548554adad9d730d448532970ba47db02a76e119eac5c3f0
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-aead
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-null
+Source: package/kernel/linux
+SourceName: kmod-crypto-aead
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 228
+Filename: kmod-crypto-aead_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 966
+SHA256sum: 2a39a93c3017bccf66b9c5401fb1c0281a7e75591a0089155d2ee2b57905244b
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-authenc
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-manager, kmod-crypto-null
+Source: package/kernel/linux
+SourceName: kmod-crypto-authenc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5759
+Filename: kmod-crypto-authenc_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6522
+SHA256sum: 21c3532c5a01d4ba5f1de15768c5bb2e207572354e1511db1e00c2643c660194
+Description:  Combined mode wrapper for IPsec
+
+Package: kmod-crypto-cbc
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-cbc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1933
+Filename: kmod-crypto-cbc_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2714
+SHA256sum: 383f60fd94de0aca7b5c43b1157eac758ac44ffc891e3296c4b91d5905393a70
+Description:  Cipher Block Chaining CryptoAPI module
+
+Package: kmod-crypto-ccm
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-ctr, kmod-crypto-aead
+Source: package/kernel/linux
+SourceName: kmod-crypto-ccm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 184
+Filename: kmod-crypto-ccm_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 941
+SHA256sum: 336f01e2f6dcc87c7328e12be78d9fff9891f48a40e3d610f682b64c59d52f5e
+Description:  Support for Counter with CBC MAC (CCM)
+
+Package: kmod-crypto-cmac
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-cmac
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2561
+Filename: kmod-crypto-cmac_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3322
+SHA256sum: 439a875dd704f67921c910ecc9c631f16d952eb3dfecdabd74a76baef540a499
+Description:  Support for Cipher-based Message Authentication Code (CMAC)
+
+Package: kmod-crypto-crc32
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-crc32
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1478
+Filename: kmod-crypto-crc32_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2216
+SHA256sum: c130a0a12028e6bc888c1d3a47e90e20f70582841a5f19c91a074ca3fffaba16
+Description:  CRC32 CRC module
+
+Package: kmod-crypto-crc32c
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-crc32c
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1493
+Filename: kmod-crypto-crc32c_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2235
+SHA256sum: f4c2c35f8248b150c54429631f9de713ecd7da994c92a3919dc0085b3a06f6d3
+Description:  CRC32c CRC module
+
+Package: kmod-crypto-ctr
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-manager, kmod-crypto-seqiv
+Source: package/kernel/linux
+SourceName: kmod-crypto-ctr
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 183
+Filename: kmod-crypto-ctr_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 934
+SHA256sum: 40dfce7f43ee10dc578165d5b06c2d5c74d751ff7c73bad972637bb7b6c7bbd0
+Description:  Counter Mode CryptoAPI module
+
+Package: kmod-crypto-ecb
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-ecb
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1486
+Filename: kmod-crypto-ecb_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2267
+SHA256sum: 92967cd282baa841a1b300b260285aedc578c16a4f041a633cca1ba9d49fdade
+Description:  Electronic CodeBook CryptoAPI module
+
+Package: kmod-crypto-gcm
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-ctr, kmod-crypto-ghash, kmod-crypto-null
+Source: package/kernel/linux
+SourceName: kmod-crypto-gcm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 184
+Filename: kmod-crypto-gcm_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 938
+SHA256sum: e76c8c762df9b93d271f8e53273f1f3aa1f286a8705445a5f3f10ca4b2b6fdc3
+Description:  GCM/GMAC CryptoAPI module
+
+Package: kmod-crypto-gf128
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-crypto-gf128
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 190
+Filename: kmod-crypto-gf128_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 945
+SHA256sum: b810703c159572f812fb485c55da2be4b5aba7e58d25b0df9feb52334dc75ccf
+Description:  GF(2^128) multiplication functions CryptoAPI module
+
+Package: kmod-crypto-ghash
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-gf128, kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-ghash
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 194
+Filename: kmod-crypto-ghash_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 945
+SHA256sum: ee336f035d81901269bd4608faed84c3f90c7fa313e04accec46a3a17a07a395
+Description:  GHASH digest CryptoAPI module
+
+Package: kmod-crypto-hash
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 234
+Filename: kmod-crypto-hash_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 967
+SHA256sum: ffde75618671b613c2f19b0f41d260dab875def70562bdc19316b9372ef9f708
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-hmac
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash, kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-hmac
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 185
+Filename: kmod-crypto-hmac_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 938
+SHA256sum: 6d057825f0596e8a7df2a14ff8510959d2c363aa45e42ec17612adc9a59bc329
+Description:  HMAC digest CryptoAPI module
+
+Package: kmod-crypto-manager
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-aead, kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 235
+Filename: kmod-crypto-manager_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 977
+SHA256sum: 76721a8738ec5ad5fa1c22af0d6e01ff76483087cc1fe0267294d8e5aa696afc
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-misc
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-xts, kmod-crypto-user
+Source: package/kernel/linux
+SourceName: kmod-crypto-misc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 89260
+Filename: kmod-crypto-misc_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 85044
+SHA256sum: b0ef96b9e7d8a5d9fb14c33120707ec439fed26b117942c8d0069d0b3d7c567e
+Description:  Other CryptoAPI modules
+
+Package: kmod-crypto-null
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-null
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 189
+Filename: kmod-crypto-null_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 933
+SHA256sum: 52410dc38c0ec66d162d1a472f3cdcde2e458ecbd6bd15db554c6ec740b15e3b
+Description:  Null CryptoAPI module
+
+Package: kmod-crypto-rng
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash, kmod-crypto-hmac, kmod-crypto-sha512
+Source: package/kernel/linux
+SourceName: kmod-crypto-rng
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 202
+Filename: kmod-crypto-rng_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 959
+SHA256sum: d2d3f3b7cba64b95cf521349a91577bf215ccf30cb611783842ec81972211a5f
+Description:  CryptoAPI random number generation
+
+Package: kmod-crypto-seqiv
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-aead, kmod-crypto-rng
+Source: package/kernel/linux
+SourceName: kmod-crypto-seqiv
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2138
+Filename: kmod-crypto-seqiv_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2884
+SHA256sum: 8d04b7a9865c0a87019ed47a4939b106d75d40988470ad4b609cf623ad2c3433
+Description:  CryptoAPI Sequence Number IV Generator
+
+Package: kmod-crypto-sha1
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-sha1
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3632
+Filename: kmod-crypto-sha1_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4406
+SHA256sum: 23c551839ffb4a749a1789b426064c472e509e2a5bcb5c8bd9dc5ba8613b76f6
+Description:  SHA1 digest CryptoAPI module
+
+Package: kmod-crypto-sha256
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-sha256
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 195
+Filename: kmod-crypto-sha256_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 944
+SHA256sum: 5e545ba5b4717d5eb2788f4b667828c5aa190955e94bb877e84915de56c771ba
+Description:  SHA224 SHA256 digest CryptoAPI module
+
+Package: kmod-crypto-sha512
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-sha512
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5907
+Filename: kmod-crypto-sha512_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6607
+SHA256sum: d374abaf9a5ec19364447fe5f1a525adea84ddeadcad4a3dd89c44509031c26b
+Description:  SHA512 digest CryptoAPI module
+
+Package: kmod-crypto-user
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash, kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-user
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 20835
+Filename: kmod-crypto-user_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 21578
+SHA256sum: 289eed9fab27a23063c7f0c9f15dbe8adad4992a4bf908e71cac2dd3ef5a49f1
+Description:  CryptoAPI userspace interface
+
+Package: kmod-crypto-xts
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-gf128, kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-xts
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3775
+Filename: kmod-crypto-xts_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4517
+SHA256sum: 3da6a99675001afd0e4fbbf40fc2926b19557757b0b2172850c9bd6a44c65423
+Description:  XTS cipher CryptoAPI module
+
+Package: kmod-cryptodev
+Version: 5.15.146+1.12-ipq806x-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-authenc, kmod-crypto-hash
+Source: package/kernel/cryptodev-linux
+SourceName: kmod-cryptodev
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: kernel
+SourceDateEpoch: 1684402529
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 21384
+Filename: kmod-cryptodev_5.15.146+1.12-ipq806x-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 22232
+SHA256sum: 28ddfadd639336d8423b70f49a9bb8002a18ab3a0a39073bc1edbbc0ebc87598
+Description:  This is a driver for that allows to use the Linux kernel supported
+ hardware ciphers by user-space applications.
+
+Package: kmod-dax
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-dax
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 13413
+Filename: kmod-dax_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 14147
+SHA256sum: da2645f2f1ea70816782b63edae6128ea797aa92c4ec29d2f92cff74d96d6d7a
+Description:  DAX: direct access to differentiated memory
+
+Package: kmod-dm
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-manager, kmod-dax, kmod-keys-encrypted
+Source: package/kernel/linux
+SourceName: kmod-dm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 98000
+Filename: kmod-dm_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 98377
+SHA256sum: dce4ab5efce71eec3b039ddb6f1b4961c9cc35a9a3c4f4436351e1a404c30962
+Description:  Kernel module necessary for LVM2 support
+
+Package: kmod-dnsresolver
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-dnsresolver
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 4985
+Filename: kmod-dnsresolver_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5710
+SHA256sum: e7c85531fbea907903b630d12c8c113fae9f80f901133839b9b58b906f2ab0aa
+Description:  In-kernel DNS Resolver
+
+Package: kmod-fs-exfat
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-fs-exfat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 40897
+Filename: kmod-fs-exfat_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 41519
+SHA256sum: f5d5408ab39fc04cf18927421eb7ce48e36d4d80d819604deee951423d5f8113
+Description:  Kernel module for exFAT filesystem support
+
+Package: kmod-fs-ext4
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-lib-crc16, kmod-crypto-hash, kmod-crypto-crc32c
+Source: package/kernel/linux
+SourceName: kmod-fs-ext4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 311998
+Filename: kmod-fs-ext4_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 309788
+SHA256sum: 478f936a6bc3712b3e98c233bcb64a9f4f50ff084dd72c790b2f75e705bdfb05
+Description:  Kernel module for EXT4 filesystem support
+
+Package: kmod-fs-f2fs
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash, kmod-crypto-crc32, kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-fs-f2fs
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 208637
+Filename: kmod-fs-f2fs_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 206843
+SHA256sum: 2ae40e9efe0ded3c2025debecf32b3e2f870263f4e43b23af456ecc03f8dc5f4
+Description:  Kernel module for F2FS filesystem support
+
+Package: kmod-fs-hfs
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-cdrom, kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-fs-hfs
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 29819
+Filename: kmod-fs-hfs_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 30562
+SHA256sum: 25e0d16331d5520c17aeef857c7436df91ce30ae068d1e62a847da54f5daa04a
+Description:  Kernel module for HFS filesystem support
+
+Package: kmod-fs-hfsplus
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-cdrom, kmod-nls-base, kmod-nls-utf8
+Source: package/kernel/linux
+SourceName: kmod-fs-hfsplus
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 58115
+Filename: kmod-fs-hfsplus_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 58681
+SHA256sum: 5d53999d4391b9f8550d8159910dd531c992825249bb0df78357d4f0a4f5aca6
+Description:  Kernel module for HFS+ filesystem support
+
+Package: kmod-fs-msdos
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-fs-vfat, kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-fs-msdos
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5486
+Filename: kmod-fs-msdos_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6264
+SHA256sum: d25cb068ef724c11f3e6c510f0b69933e9efc20c236c16f83b7eddc7d9ee7836
+Description:  Kernel module for MSDOS filesystem support
+
+Package: kmod-fs-nfs-common
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-oid-registry
+Source: package/kernel/linux
+SourceName: kmod-fs-nfs-common
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 153476
+Filename: kmod-fs-nfs-common_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 152539
+SHA256sum: 5ac68aba3b6f0dbd8b64d89502b1993921bd96f873782fe3b05455d2d63b947f
+Description:  Common NFS filesystem modules
+
+Package: kmod-fs-nfs-v3
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-fs-nfs
+Source: package/kernel/linux
+SourceName: kmod-fs-nfs-v3
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 12197
+Filename: kmod-fs-nfs-v3_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 12929
+SHA256sum: 65ed09bc3e8b584c802546d9eaf6eea989ebad8792c3afe81ab44cc7add41d1c
+Description:  Kernel module for NFS v3 client support
+
+Package: kmod-fs-nfs-v4
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-fs-nfs
+Source: package/kernel/linux
+SourceName: kmod-fs-nfs-v4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 150751
+Filename: kmod-fs-nfs-v4_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 149293
+SHA256sum: 9dd3c74e16e956add2cae7aeaeb89dc9ab8b91b8d74ca589a9c8b9340aa104ae
+Description:  Kernel module for NFS v4 client support
+
+Package: kmod-fs-nfs
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-fs-nfs-common, kmod-dnsresolver
+Source: package/kernel/linux
+SourceName: kmod-fs-nfs
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 85138
+Filename: kmod-fs-nfs_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 85115
+SHA256sum: 23f342d20fc04836c82e0c40e04e1d6c7b1d85c5724e60d7be31cff190855176
+Description:  Kernel module for NFS client support
+
+Package: kmod-fs-vfat
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base, kmod-nls-cp437, kmod-nls-iso8859-1, kmod-nls-utf8
+Source: package/kernel/linux
+SourceName: kmod-fs-vfat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 45029
+Filename: kmod-fs-vfat_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 45647
+SHA256sum: 7154324a47f06f048e984823df3596d1085cdf044488dba161031cbea210142e
+Description:  Kernel module for VFAT filesystem support
+
+Package: kmod-fuse
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-fuse
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 60753
+Filename: kmod-fuse_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 61168
+SHA256sum: cab1e6f0761196e632d81f39ddb96f7e45f83ed22800eb65129bef63e6f20f67
+Description:  Kernel module for userspace filesystem support
+
+Package: kmod-google-firmware
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-google-firmware
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 6150
+Filename: kmod-google-firmware_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 7035
+SHA256sum: c508697272083b371d8aeeba9fdb96a3f010d12fa237e77a0a23e9b5f8b06d13
+Description:  Kernel modules for Google firmware drivers. Useful for examining firmware and
+ boot details on devices using a Google bootloader based on Coreboot. Provides
+ files like /sys/firmware/log and /sys/firmware/vpd.
+
+Package: kmod-gpio-button-hotplug
+Version: 5.15.146-3
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/gpio-button-hotplug
+SourceName: kmod-gpio-button-hotplug
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1684422703
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 6040
+Filename: kmod-gpio-button-hotplug_5.15.146-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6960
+SHA256sum: 08db686bd008b2aa5e7fa2292bf146016a7b8613e1bf93c5d3b3df773814674c
+Description:  This is a replacement for the following in-kernel drivers:
+ 1) gpio_keys (KEYBOARD_GPIO)
+ 2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
+ 
+ Instead of generating input events (like in-kernel drivers do) it generates
+ uevent-s and broadcasts them. This allows disabling input subsystem which is
+ an overkill for OpenWrt simple needs.
+
+Package: kmod-gre
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-iptunnel
+Source: package/kernel/linux
+SourceName: kmod-gre
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 13025
+Filename: kmod-gre_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 13791
+SHA256sum: f50f98a8576b89d2ae3840a59b2fbc1f27950ec3c9f623e4b1dbd80b40278a00
+Description:  Generic Routing Encapsulation support
+
+Package: kmod-hwmon-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 95
+Filename: kmod-hwmon-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 832
+SHA256sum: 9b3ea32905d35cbb6ee3013316ecc80360ba22ff913bb3c5655dc8582891f49f
+Description:  Kernel modules for hardware monitoring
+
+Package: kmod-i2c-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-i2c-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 187
+Filename: kmod-i2c-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 917
+SHA256sum: 940815d8f9f50362440cc9039666db60f184666bf0731b09db979eefa5819b4d
+Description:  Kernel modules for I2C support
+
+Package: kmod-ifb
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-ifb
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3924
+Filename: kmod-ifb_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4657
+SHA256sum: ec6fa123df9cea653fc5efa7ea577e34b8d1e1a2bc6951ba5a37992049891e8b
+Description:  The Intermediate Functional Block
+
+Package: kmod-ip6-tunnel
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-iptunnel6
+Source: package/kernel/linux
+SourceName: kmod-ip6-tunnel
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 17465
+Filename: kmod-ip6-tunnel_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 18252
+SHA256sum: 5ae38103dabce59a287a536ba64fe8d2dfa2e00613d4a5bd14e79d7e557dd71f
+Description:  Kernel modules for IPv6-in-IPv6 and IPv4-in-IPv6 tunnelling
+
+Package: kmod-ipt-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nf-reject, kmod-nf-ipt, kmod-nf-log
+Source: package/kernel/linux
+SourceName: kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 12781
+Filename: kmod-ipt-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 13564
+SHA256sum: 90155c2271290fa6979d12ab9160830d86c48dc1c4fc3fa9bd6d3107773e558e
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-ipopt
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-ipopt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 8261
+Filename: kmod-ipt-ipopt_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 9147
+SHA256sum: 0531d75b82cfdadf436c14e8a3d9afe472da95c3a8699431a7942d274a85216a
+Description:  Netfilter (IPv4) modules for matching/changing IP packet options
+ Includes:
+ - CLASSIFY
+ - dscp/DSCP
+ - ecn/ECN
+ - hl/HL
+ - length
+ - mark/MARK
+ - statistic
+ - tcpmss
+ - time
+ - ttl/TTL
+ - unclean
+
+Package: kmod-iptunnel4
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-iptunnel4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2305
+Filename: kmod-iptunnel4_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3039
+SHA256sum: a4c7e4b0ef0a151d55587e1031828dd63e9c8423b088161a275b56c827938b15
+Description:  Kernel modules for IPv4 tunneling
+
+Package: kmod-iptunnel6
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-iptunnel6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2383
+Filename: kmod-iptunnel6_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3119
+SHA256sum: 1f2b53d59ae4643a971ef1612c38007cf332065e92a785787a6be5a78305a4b6
+Description:  Kernel modules for IPv6 tunneling
+
+Package: kmod-iptunnel
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-iptunnel
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 10627
+Filename: kmod-iptunnel_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 11401
+SHA256sum: 893535e2e6457ba5e8192f396f8b14e57fef9c992138cea63fa3a7d5c0c6d72d
+Description:  Kernel module for generic IP tunnel support
+
+Package: kmod-keys-encrypted
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-cbc, kmod-crypto-hmac, kmod-crypto-rng, kmod-crypto-sha256, kmod-keys-trusted
+Source: package/kernel/linux
+SourceName: kmod-keys-encrypted
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 7409
+Filename: kmod-keys-encrypted_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 8353
+SHA256sum: 3aaf6dc93602829da07c7bc97dc66bbe32e49a0ba172026acc3c175fed11bd59
+Description:  This module provides support for create/encrypting/decrypting keys
+ in the kernel.  Encrypted keys are kernel generated random numbers,
+ which are encrypted/decrypted with a 'master' symmetric key. The
+ 'master' key can be either a trusted-key or user-key type.
+ Userspace only ever sees/stores encrypted blobs.
+
+Package: kmod-keys-trusted
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-hash, kmod-crypto-hmac, kmod-crypto-sha1, kmod-tpm
+Source: package/kernel/linux
+SourceName: kmod-keys-trusted
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 12257
+Filename: kmod-keys-trusted_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 13170
+SHA256sum: 65b82993149d1caa996f4cdbca7c317a321ed632018badc49a897a9c8eb52f83
+Description:  This module provides support for creating, sealing, and unsealing
+ keys in the kernel. Trusted keys are random number symmetric keys,
+ generated and RSA-sealed by the TPM. The TPM only unseals the keys,
+ if the boot PCRs and other criteria match.  Userspace will only ever
+ see encrypted blobs.
+
+Package: kmod-leds-gpio
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-leds-gpio
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2963
+Filename: kmod-leds-gpio_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3700
+SHA256sum: 70fee6bd7ab512756648bdf3de7a6d7d986d67e3e4b8daf1b8164705bdaef880
+Description:  Kernel module for LEDs on GPIO lines
+
+Package: kmod-lib-crc-ccitt
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2240
+Filename: kmod-lib-crc-ccitt_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3005
+SHA256sum: 016bd80e07c736d3b56c689f90af6d6d721f5397e40a5f8d181f7777c9191f8f
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-crc16
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-lib-crc16
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 223
+Filename: kmod-lib-crc16_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 967
+SHA256sum: 2e8bb7f0f7bcdad08795956c662fd8e187fec61c524561bfd8db0046f7779522
+Description:  Kernel module for CRC16 support
+
+Package: kmod-lib-crc32c
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-crypto-crc32c
+Source: package/kernel/linux
+SourceName: kmod-lib-crc32c
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1535
+Filename: kmod-lib-crc32c_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2308
+SHA256sum: 0fe4571c64af01a2011b834ccea71ecbb31338550fe77bf7764f513ca16ed4a0
+Description:  Kernel module for CRC32 support
+
+Package: kmod-mac80211
+Version: 5.15.146+6.1.24-3
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-cfg80211, kmod-crypto-cmac, kmod-crypto-ccm, kmod-crypto-gcm, hostapd-common, kmod-qca-nss-drv
+Source: package/kernel/mac80211
+SourceName: kmod-mac80211
+Section: kernel
+SourceDateEpoch: 1705330034
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 331664
+Filename: kmod-mac80211_5.15.146+6.1.24-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 329105
+SHA256sum: 5a2857f35371d3b3fe7eeaaaece47e408d7e01da385727bab4455ed96c2ca0e8
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-nf-conntrack6
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 95
+Filename: kmod-nf-conntrack6_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 833
+SHA256sum: 1b3f0bc0b40833e7af33ea87ece0eb75855c8b23e0af7c71b81ca8643bb93313
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 51810
+Filename: kmod-nf-conntrack_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 52365
+SHA256sum: a1f5ca3e33b15a12e06ec98307a702c2a4be516833956d923b3c39c40e2b3b7f
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 14595
+Filename: kmod-nf-flow_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 15296
+SHA256sum: 111221abb3828dc91448e43c38911614c9580f97b6f218650aa778a757d5852c
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 19196
+Filename: kmod-nf-ipt_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 19897
+SHA256sum: aea4d550eef8a7ae6ad5f07a96b85c63aaff862e61cc35fef153ce411c26a3a3
+Description:  Iptables core
+
+Package: kmod-nf-log6
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nf-log
+Source: package/kernel/linux
+SourceName: kmod-nf-log6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 95
+Filename: kmod-nf-log6_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 825
+SHA256sum: ca6f563cd095cf24d6e9f701cb6f6a903967eb7b9eed63efaa457a4b8219bee5
+Description:  Netfilter IPV6 Logging
+
+Package: kmod-nf-log
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-nf-log
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 8284
+Filename: kmod-nf-log_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 9010
+SHA256sum: 9c79ea1947aac8a069726b5184a7d956670d252cf4c2586966fd3ed965c84a38
+Description:  Netfilter Logging
+
+Package: kmod-nf-nat
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 13890
+Filename: kmod-nf-nat_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 14610
+SHA256sum: e3948b6369a1b41e14d781f9928a462df71a7c31d8c90f7e8d5e5b973756b446
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject6
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3729
+Filename: kmod-nf-reject6_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4456
+SHA256sum: 10146f8fcf8963ef424161f5cfa56d7b27139f1c93bc6706c2d60a00920ededb
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3471
+Filename: kmod-nf-reject_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4189
+SHA256sum: 31e8391abed6fc06dbd9b6c0a8a8a6b215f4f2e2f6f1b24e99af2a94f8855c86
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nfnetlink
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-nfnetlink
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5143
+Filename: kmod-nfnetlink_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5883
+SHA256sum: d5ea2a5ab300bbc61c59ecd2f2e3ede20ff845c3c0b616fad3dfaad076a91c3f
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-nft-compat
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nft-core, kmod-nf-ipt
+Source: package/kernel/linux
+SourceName: kmod-nft-compat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5392
+Filename: kmod-nft-compat_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6149
+SHA256sum: 8c3f0f0b71bbf8b2dad5805c91b39f24e788274286fcfff4856f31315aa8c447
+Description:  Netfilter nf_tables compat support
+
+Package: kmod-nft-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nfnetlink, kmod-nf-reject, kmod-nf-reject6, kmod-nf-conntrack6, kmod-nf-nat, kmod-nf-log, kmod-nf-log6, kmod-lib-crc32c
+Source: package/kernel/linux
+SourceName: kmod-nft-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 117901
+Filename: kmod-nft-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 118265
+SHA256sum: 5e8f8f20673424c862fab0e9900afb61939757a52b1a1336a80c5b2c4d3886d7
+Description:  Kernel module support for nftables
+
+Package: kmod-nft-fib
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nft-core
+Source: package/kernel/linux
+SourceName: kmod-nft-fib
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5881
+Filename: kmod-nft-fib_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6625
+SHA256sum: 637229a5d3f5ba2007adac7ef4480e46f43587d2b2b49a5f0e38d28fcf7e366a
+Description:  Netfilter nf_tables fib support
+
+Package: kmod-nft-nat
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nft-core, kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-nft-nat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5025
+Filename: kmod-nft-nat_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5756
+SHA256sum: e66d24bc4a6609bf1aaf89f3f2107980a559aa0fcf6c9578fb371fbbeb7b636e
+Description:  Netfilter nf_tables NAT support
+
+Package: kmod-nft-offload
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nf-flow, kmod-nft-nat
+Source: package/kernel/linux
+SourceName: kmod-nft-offload
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5015
+Filename: kmod-nft-offload_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5765
+SHA256sum: 64fb539842dfef94d6e844a2f0bc5c01e990ce92bb339f30f994c918c1b20f3b
+Description:  Netfilter nf_tables routing/NAT offload support
+
+Package: kmod-nls-base
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-nls-base
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 95
+Filename: kmod-nls-base_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 840
+SHA256sum: a1e2c6709ecf0d651eaf7b4a1cd33695293c4d2a61aaa9509b227f9b974ff12e
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-nls-cp1250
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-cp1250
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2391
+Filename: kmod-nls-cp1250_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3151
+SHA256sum: 0ae1c9cd8ec3906e7ce0307f550bc122a79d9133136a021282e83c76616c6fb2
+Description:  Kernel module for NLS Codepage 1250 (Eastern Europe)
+
+Package: kmod-nls-cp437
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-cp437
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2462
+Filename: kmod-nls-cp437_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3228
+SHA256sum: ab66a1e1d91ab6e12445500bed28d4089983d17286d72d015bea1ef579ce3810
+Description:  Kernel module for NLS Codepage 437 (United States, Canada)
+
+Package: kmod-nls-cp850
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-cp850
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2408
+Filename: kmod-nls-cp850_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3161
+SHA256sum: c4c57053aea84d94d40e5a074773cec9c4bc008d6abc46614c79f33dec6d5583
+Description:  Kernel module for NLS Codepage 850 (Europe)
+
+Package: kmod-nls-iso8859-15
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-iso8859-15
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2214
+Filename: kmod-nls-iso8859-15_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2981
+SHA256sum: 8cfa0774fd789da9db330a21cc63e71ebdfd4d7c9002f3c7fb8fcaa314c657c1
+Description:  Kernel module for NLS ISO 8859-15 (Latin 9)
+
+Package: kmod-nls-iso8859-1
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-iso8859-1
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2140
+Filename: kmod-nls-iso8859-1_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2898
+SHA256sum: baa98fb908567653ca353a9d7947383a80247366f65330dbf8a51aa8d2c7a7a7
+Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
+
+Package: kmod-nls-utf8
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-utf8
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1375
+Filename: kmod-nls-utf8_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2148
+SHA256sum: 38344e79aa4a063afba845fd4f03c0a88ab7f38e01a064f3815e725bfa4f180c
+Description:  Kernel module for NLS UTF-8
+
+Package: kmod-nss-ifb
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-qca-nss-drv
+Source: feeds/nss/nss-ifb
+SourceName: kmod-nss-ifb
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3562
+Filename: kmod-nss-ifb_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4308
+SHA256sum: e1f7178b91d82113b33a79972e21ad00bb62a435e4ebe765d7bd0817cc4ded70
+Description:  Kernel module to register a NSS aware IFB interface.
+
+Package: kmod-oid-registry
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-oid-registry
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2612
+Filename: kmod-oid-registry_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3343
+SHA256sum: 1d36964615dab0024ac2b18ba07bf182401d7a0783b578c79acfcec87e685ea2
+Description:  Object identifier registry
+
+Package: kmod-phy-qcom-ipq806x-usb
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-phy-qcom-ipq806x-usb
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 237
+Filename: kmod-phy-qcom-ipq806x-usb_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 1043
+SHA256sum: 46700e9bc5fb1980869886d5944baf967da82716760b7b1bacf2f465eafe7ead
+Description:  This driver provides support for the integrated DesignWare
+ USB3 IP Core within the QCOM SoCs.
+
+Package: kmod-ppp
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+SourceName: kmod-ppp
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 26303
+Filename: kmod-ppp_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 26938
+SHA256sum: 7ea460c29273697b8dee653cc8b5bbe45a6b44706b552fd30aaadaf464575173
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+SourceName: kmod-pppoe
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 8165
+Filename: kmod-pppoe_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 8909
+SHA256sum: fb00ca68821cea0ec9c6b04a2cf21b39624fba81c56469243d6ba4bb41b6c47e
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-ppp
+Source: package/kernel/linux
+SourceName: kmod-pppox
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1889
+Filename: kmod-pppox_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2666
+SHA256sum: 593150b116b6965c0f5872c2054a6ff069d9cab104182a6ec042bb04e7e0ed88
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-pptp
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-ppp, kmod-gre, kmod-pppox
+Source: package/kernel/linux
+SourceName: kmod-pptp
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 6898
+Filename: kmod-pptp_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 7658
+SHA256sum: 394fb208362067470540f871e3e579920cfabde9c76327617f5b47c5c1e64b2e
+Description:  PPtP support
+
+Package: kmod-pstore
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-pstore
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 9028
+Filename: kmod-pstore_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 9802
+SHA256sum: 5e36f43974ce106ec52f057f969fe96c8a651d51549b8be8a6c2cedcec2e0f4d
+Description:  Kernel module for pstore filesystem support
+
+Package: kmod-qca-nss-crypto
+Version: 5.15.146+2021-03-20-2271a3a-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-qca-nss-drv
+Source: feeds/nss/qca-nss-crypto
+SourceName: kmod-qca-nss-crypto
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 21699
+Filename: kmod-qca-nss-crypto_5.15.146+2021-03-20-2271a3a-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 22446
+SHA256sum: 832e8b878a68366cb6e6d3cb89082e4b392220ff13bf39fb493ef2ae861a163e
+Description:  Kernel driver for NSS crypto driver
+
+Package: kmod-qca-nss-drv-igs
+Version: 5.15.146+2020-10-29-ef082a73-2
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-sched-core, kmod-ifb, kmod-qca-nss-drv-qdisc, kmod-qca-nss-drv
+Source: feeds/nss/qca-nss-clients
+SourceName: kmod-qca-nss-drv-igs
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 9500
+Filename: kmod-qca-nss-drv-igs_5.15.146+2020-10-29-ef082a73-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 10323
+SHA256sum: 2de2e0db3e0a224f759a1a3005fd01be7f1d0e9736c3b29ba38f32f6616f22a9
+Description:  Linux action that helps in offloading traffic to an IFB interface to perform ingress shaping.
+
+Package: kmod-qca-nss-drv-pppoe
+Version: 5.15.146+2020-10-29-ef082a73-2
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-pppoe, kmod-qca-nss-drv
+Source: feeds/nss/qca-nss-clients
+SourceName: kmod-qca-nss-drv-pppoe
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2695
+Filename: kmod-qca-nss-drv-pppoe_5.15.146+2020-10-29-ef082a73-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3469
+SHA256sum: 81f15e8ffe11c6ae247926f0193597f2d337e79c8694387b90a0e15a87de6b99
+Description:  Kernel modules for NSS connection manager - Support for PPPoE
+
+Package: kmod-qca-nss-drv-pptp
+Version: 5.15.146+2020-10-29-ef082a73-2
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-pptp, kmod-qca-nss-drv
+Source: feeds/nss/qca-nss-clients
+SourceName: kmod-qca-nss-drv-pptp
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 4232
+Filename: kmod-qca-nss-drv-pptp_5.15.146+2020-10-29-ef082a73-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4999
+SHA256sum: 94c771a92ebaba4b45b0e795f507ac861b2546017cc17cab0ec118c8435b1338
+Description:  Kernel modules for NSS connection manager - Support for PPTP tunnel
+
+Package: kmod-qca-nss-drv-qdisc
+Version: 5.15.146+2020-10-29-ef082a73-2
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-qca-nss-drv
+Source: feeds/nss/qca-nss-clients
+SourceName: kmod-qca-nss-drv-qdisc
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 29905
+Filename: kmod-qca-nss-drv-qdisc_5.15.146+2020-10-29-ef082a73-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 30555
+SHA256sum: 6e0f7373ee9bbbb27b142a8c8b47096581d8e1f0d87eda425aae55424cb20eb6
+Description:  Linux qdisc that aids in configuring shapers in the NSS
+
+Package: kmod-qca-nss-drv
+Version: 5.15.146+2020-03-20-3cfb9f43-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-qca-nss-gmac
+Source: feeds/nss/qca-nss-drv
+SourceName: kmod-qca-nss-drv
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 353312
+Filename: kmod-qca-nss-drv_5.15.146+2020-03-20-3cfb9f43-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 352039
+SHA256sum: 195e5bc57139e329e7006f32f9962ec9d0b7f2920bdddd80247a05480589b15b
+Description:  Kernel driver for NSS (core driver)
+
+Package: kmod-qca-nss-ecm-standard
+Version: 5.15.146+2023-01-20-db66c47-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-qca-nss-drv, kmod-nf-conntrack, kmod-ppp, kmod-pppoe, kmod-pptp
+Provides: kmod-qca-nss-ecm
+Source: feeds/nss/qca-nss-ecm
+SourceName: kmod-qca-nss-ecm-standard
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 163243
+Filename: kmod-qca-nss-ecm-standard_5.15.146+2023-01-20-db66c47-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 160775
+SHA256sum: f92efffccd58b1e48b581f413143006f453afd2fe44e112e31834925e40e7428
+Description:  This package contains the QCA NSS Enhanced Connection Manager
+
+Package: kmod-qca-nss-gmac
+Version: 5.15.146+2021-04-20-17176794-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: feeds/nss/qca-nss-gmac
+SourceName: kmod-qca-nss-gmac
+Section: kernel
+SourceDateEpoch: 1688932812
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 29035
+Filename: kmod-qca-nss-gmac_5.15.146+2021-04-20-17176794-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 29693
+SHA256sum: 522606c2c2091989cf4e50fa89821e7de9a9522a28a2e5786ea60015a1df881e
+Description:  Kernel driver for NSS gmac
+
+Package: kmod-ramoops
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-pstore, kmod-reed-solomon
+Source: package/kernel/linux
+SourceName: kmod-ramoops
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 10182
+Filename: kmod-ramoops_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 10970
+SHA256sum: 19d7935cb61d277f0fea2fb557ca29f8284b879b589095fd7176f03b0cb989a7
+Description:  Kernel module for pstore-ram (ramoops) crash log storage
+
+Package: kmod-random-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-random-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 95
+Filename: kmod-random-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 848
+SHA256sum: f5ead6c13f15a41407eafe87f868193bf01eb45e8b2ce1f81fa65b82042351f7
+Description:  Kernel module for the HW random number generator core infrastructure
+
+Package: kmod-reed-solomon
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-reed-solomon
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5270
+Filename: kmod-reed-solomon_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6007
+SHA256sum: ed8afbb0b57285f71cdf938129d2f33398eaa03159ccc5c6765be06c1843353c
+Description:  Kernel module for Reed-Solomon error correction
+
+Package: kmod-sched-cake
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-sched-core
+Source: package/kernel/linux
+SourceName: kmod-sched-cake
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 18126
+Filename: kmod-sched-cake_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 18927
+SHA256sum: 2e6faf764c322fa31de5e369c03d2dcb9715531109a715d2e33765e6cb7ab7bc
+Description:  Common Applications Kept Enhanced fq_codel/blue derived shaper
+
+Package: kmod-sched-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-sched-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 64522
+Filename: kmod-sched-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 65269
+SHA256sum: e1cf501ed9fa1e8f8c35d1b9296bee4e90689e71b2de040933c29ca433a4d0b9
+Description:  Core kernel scheduler support for IP traffic
+
+Package: kmod-scsi-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-scsi-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 237
+Filename: kmod-scsi-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 965
+SHA256sum: 3fd68a9ba746292978aee93625fc74acff7fd099b47f13288d2015c4e3eeb9a9
+Description:  SCSI device support
+
+Package: kmod-sit
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-iptunnel, kmod-iptunnel4
+Source: package/kernel/linux
+SourceName: kmod-sit
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 12736
+Filename: kmod-sit_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 13474
+SHA256sum: 6cc4cd5eeea5f85723e6893a98c0ec61eb8f22ffb6e0490884024a3a2afa0e8c
+Description:  Kernel modules for IPv6-in-IPv4 tunnelling
+
+Package: kmod-slhc
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+SourceName: kmod-slhc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3811
+Filename: kmod-slhc_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4542
+SHA256sum: 8db23a0fd08a57e9da929f6465cea66c2ccefb8070663a5131546f04aae5c891
+Description:  Serial Line Header Compression
+
+Package: kmod-tpm-i2c-infineon
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-tpm, kmod-i2c-core
+Source: package/kernel/linux
+SourceName: kmod-tpm-i2c-infineon
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 4292
+Filename: kmod-tpm-i2c-infineon_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5072
+SHA256sum: 25dcbc1105ea6c53714f91741f89c87d822eb51d872e493fb7b97556ed31b8a6
+Description:  This enables the TPM Interface Specification 1.2 Interface (I2C - Infineon)
+
+Package: kmod-tpm
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-random-core, kmod-asn1-decoder, kmod-asn1-encoder, kmod-oid-registry
+Source: package/kernel/linux
+SourceName: kmod-tpm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 25071
+Filename: kmod-tpm_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 25435
+SHA256sum: d93cca0625f4ae1cadf3ff82334b17f814591977f09ea89b4fcd2ec157335dce
+Description:  This enables TPM Hardware Support.
+
+Package: kmod-tun
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681)
+Source: package/kernel/linux
+SourceName: kmod-tun
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 25108
+Filename: kmod-tun_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 25677
+SHA256sum: 9b7fc5716db2bb3a47f350a9b775524d38a92a25ffb55c8c0fd53472ab4ac5d3
+Description:  Kernel support for the TUN/TAP tunneling device
+
+Package: kmod-usb-core
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-usb-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 230
+Filename: kmod-usb-core_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 965
+SHA256sum: eb428b9a02327f2884c7ab8bb2b939912efec4a56cb33fb0e58e40eaa724a7c3
+Description:  Kernel support for USB
+
+Package: kmod-usb-dwc3-qcom
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-dwc3, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-dwc3-qcom
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 229
+Filename: kmod-usb-dwc3-qcom_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 1070
+SHA256sum: f93a9a967da402abee7d219ddac3da30e0f6032bf49213fa87fffa3e063e6a7d
+Description:  Some Qualcomm SoCs use DesignWare Core IP for USB2/3 functionality.
+ This driver also handles Qscratch wrapper which is needed for
+ peripheral mode support.
+
+Package: kmod-usb-dwc3
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-dwc3
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 222
+Filename: kmod-usb-dwc3_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 1034
+SHA256sum: cd27bf5c1ca35c1e15d45891363a431d59bfed64dbedd6f547f7044a169486fd
+Description:  This driver provides support for the Dual Role SuperSpeed
+ USB Controller based on the Synopsys DesignWare USB3 IP Core
+
+Package: kmod-usb-ehci
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-ehci
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 24658
+Filename: kmod-usb-ehci_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 25303
+SHA256sum: 7621a611de9c1d4fac72d8a03be8f9728cb91944a75dfb0512b11e93b95d28b9
+Description:  EHCI controller support
+
+Package: kmod-usb-ledtrig-usbport
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-ledtrig-usbport
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3288
+Filename: kmod-usb-ledtrig-usbport_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4157
+SHA256sum: 00f6bc53095a56420b83a708cea7ef99217706a724270b91c228f3b8c0909e0b
+Description:  This driver allows LEDs to be controlled by USB events. Enabling this
+ trigger allows specifying list of USB ports that should turn on LED
+ when some USB device gets connected.
+ If possible it should be prefered over similar ledtrig-usbdev.
+
+Package: kmod-usb-ohci
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-ohci
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 20310
+Filename: kmod-usb-ohci_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 21002
+SHA256sum: 1defd8f4e07685a4478081618d3e00030ed75c6fd2f3a2e880f6243fc53b7f3c
+Description:  Kernel support for USB OHCI controllers
+
+Package: kmod-usb-printer
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-printer
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 7992
+Filename: kmod-usb-printer_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 8766
+SHA256sum: e4d446d183b5f05fa79e78da0dd3ce3b1369cf753d0a4689c909dc4e33bd737b
+Description:  Kernel support for USB printers
+
+Package: kmod-usb-storage-uas
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-storage
+Source: package/kernel/linux
+SourceName: kmod-usb-storage-uas
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 9180
+Filename: kmod-usb-storage-uas_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 10021
+SHA256sum: 539a524b2b4cb175a1c6592d312478377c82e13dba954bcd1d69631fb5d7a014
+Description:  Say Y here if you want to include support for
+ USB Attached SCSI (UAS/UASP), a higher
+ performance protocol available on many
+ newer USB 3.0 storage devices
+
+Package: kmod-usb-storage
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-scsi-core, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-storage
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 226
+Filename: kmod-usb-storage_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 986
+SHA256sum: 276ace2fa4856d81c8d0678b5b65f07f74f5f061eb06185a6a66a8b3afa383ff
+Description:  Kernel support for USB Mass Storage devices
+
+Package: kmod-usb-xhci-hcd
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-xhci-hcd
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 229
+Filename: kmod-usb-xhci-hcd_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 1028
+SHA256sum: 236e1cec0bd3241792fabe9bdf9dddae9a0e40db881cb34d92306b46260186c5
+Description:  The eXtensible Host Controller Interface (xHCI) is standard for USB 3.0
+ "SuperSpeed" host controller hardware.
+
+Package: kmod-usb2
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-ehci, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb2
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 8847
+Filename: kmod-usb2_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 9619
+SHA256sum: 715bfea5daaf1f186e0dd0b75e72559733cb667fe024ebab6d09f4ebb4114b8e
+Description:  Kernel support for USB2 (EHCI) controllers
+
+Package: kmod-usb3
+Version: 5.15.146-1
+Depends: kernel (=5.15.146-1-ef423a252dbedd730638c70925fce681), kmod-usb-xhci-hcd, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb3
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1704752135
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 95
+Filename: kmod-usb3_5.15.146-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 851
+SHA256sum: 35e45475bec8e0a0bb127061135a033f5cba976246d9bf376a2f42619360e147
+Description:  Kernel support for USB3 (XHCI) controllers
+
+Package: libatomic1
+Version: 12.3.0-4
+Depends: libgcc1
+Provides: libatomic
+Source: package/libs/toolchain
+SourceName: libatomic
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1648814098
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5007
+Filename: libatomic1_12.3.0-4_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5759
+SHA256sum: 424cc78ad64cdad61a57b784291e8756c0916c4c8d85b8dfa78ea43a60b5b988
+Description:  Atomic support library
+
+Package: libgcc1
+Version: 12.3.0-4
+Provides: libgcc
+Source: package/libs/toolchain
+SourceName: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1648814098
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 21014
+Filename: libgcc1_12.3.0-4_arm_cortex-a15_neon-vfpv4.ipk
+Size: 21807
+SHA256sum: 5b4bd16706077e629a2a98b675ec057f95b8b5760d14b70df18b8a8046cb86c7
+Description:  GCC support library
+
+Package: libiptext-nft0
+Version: 1.8.8-2
+Depends: libc, libxtables12
+Provides: libiptext-nft
+Source: package/network/utils/iptables
+SourceName: libiptext-nft
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1699794865
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2568
+Filename: libiptext-nft0_1.8.8-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3330
+SHA256sum: b668bc9f7e9e5544722be8abba7f856b6e41e3b53d8c8aaabda62697367c118d
+Description:  IPv4/IPv6 firewall - shared libiptext nft library
+
+Package: libiptext0
+Version: 1.8.8-2
+Depends: libc, libxtables12
+Provides: libiptext
+Source: package/network/utils/iptables
+SourceName: libiptext
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1699794865
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 28685
+Filename: libiptext0_1.8.8-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 29468
+SHA256sum: feea6315dc96d2840bc835056a6d9bcd68beb123a23f569fea79da22bc37f8c1
+Description:  IPv4 firewall - shared libiptext library
+
+Package: libiptext6-0
+Version: 1.8.8-2
+Depends: libc, libxtables12
+Provides: libiptext6
+Source: package/network/utils/iptables
+SourceName: libiptext6
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1699794865
+ABIVersion: -0
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 4811
+Filename: libiptext6-0_1.8.8-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5563
+SHA256sum: e0bcf2768a946d806131733c177399453020664d1c16d255ada8171958333c3e
+Description:  IPv6 firewall - shared libiptext library
+
+Package: libpthread
+Version: 1.2.4-4
+Depends: libgcc1
+Source: package/libs/toolchain
+SourceName: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1648814098
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 117
+Filename: libpthread_1.2.4-4_arm_cortex-a15_neon-vfpv4.ipk
+Size: 887
+SHA256sum: 6a80af54b41f551dd1a0a2cb230c527f4b1bcc66e426d122baa0e54650e7c832
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.2.4-4
+Depends: libpthread
+Source: package/libs/toolchain
+SourceName: librt
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1648814098
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 117
+Filename: librt_1.2.4-4_arm_cortex-a15_neon-vfpv4.ipk
+Size: 897
+SHA256sum: 3185e8e82bdf7a8ad376057dd6b9d55ef3300662c274f5fb2217e150bb5df81f
+Description:  POSIX.1b RealTime extension library
+
+Package: libxtables12
+Version: 1.8.8-2
+Depends: libc
+Provides: libxtables
+Source: package/network/utils/iptables
+SourceName: libxtables
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1699794865
+ABIVersion: 12
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 20707
+Filename: libxtables12_1.8.8-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 21466
+SHA256sum: a3eda596171959b85db839599adc70d70e88cd2b75a3f7184cb2d0e8bdc57048
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 26
+Depends: libc, libubox20230523
+Source: package/system/mtd
+SourceName: mtd
+License: GPL-2.0+
+Section: utils
+SourceDateEpoch: 1679419702
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 10509
+Filename: mtd_26_arm_cortex-a15_neon-vfpv4.ipk
+Size: 11262
+SHA256sum: 0fc73a9465d421c55d45e1f5b877f2463b25ec7e023d63e23c66835b68474190
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: uboot-envtools
+Version: 2023.04-1
+Depends: libc
+Source: package/boot/uboot-envtools
+SourceName: uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+SourceDateEpoch: 1704401263
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 14139
+Filename: uboot-envtools_2023.04-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 14910
+SHA256sum: 92eb941474c1630d9f3c97ea2da532b04c7bc4849d5c956cf7b76a0a38207f2e
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
+Package: xtables-nft
+Version: 1.8.8-2
+Depends: libc, libnftnl11, libiptext0, libiptext6-0, libiptext-nft0, kmod-nft-compat
+Source: package/network/utils/iptables
+SourceName: xtables-nft
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1699794865
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 68930
+Filename: xtables-nft_1.8.8-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 69517
+SHA256sum: d2d29c5be6b7d07e6e991a7b801e62543ae47f536ae092a182cf8e3dcdc357a2
+Description:  IP firewall administration tool nft
+
