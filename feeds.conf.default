@@ -4,8 +4,7 @@ src-git routing https://git.openwrt.org/feed/routing.git;openwrt-23.05
 src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-23.05
 src-git nss https://github.com/ACwifidude/nss-packages.git;NSS-11.2-K5.15
 src-git sqm_scripts_nss https://github.com/rickkdotnet/sqm-scripts-nss.git
-src-git kenzo https://github.com/kenzok8/openwrt-packages
-src-git passwall https://github.com/xiaorouji/openwrt-passwall
-src-git nas https://github.com/linkease/nas-packages.git
-src-git jerrykuku https://github.com/jerrykuku/openwrt-package
-src-git luci_passwall https://github.com/xiaorouji/openwrt-passwall.git;luci
+src-git lienol https://github.com/Lienol/openwrt-package.git;main
+src-git other https://github.com/Lienol/openwrt-package.git;other
+src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages
+src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci
